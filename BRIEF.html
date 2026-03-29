@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>BRIEF â Opgavestyring</title>
+<title>BRIEF \u2014 Opgavestyring</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 :root {
@@ -18,7 +18,7 @@ body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--te
 a{text-decoration:none;color:inherit}
 button{cursor:pointer;font-family:inherit}
 
-/* ââ HEADER âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 HEADER \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 header{background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:58px;position:sticky;top:0;z-index:200;box-shadow:0 2px 8px rgba(0,0,0,.3)}
 .logo{font-weight:800;font-size:1.2rem;letter-spacing:2px;display:flex;align-items:center;gap:10px}
 .logo-badge{background:var(--blue);color:#fff;padding:3px 8px;border-radius:4px;font-size:.75rem;font-weight:700;letter-spacing:1px}
@@ -35,12 +35,12 @@ nav button:hover,nav button.active{background:rgba(255,255,255,.15);color:#fff}
 .role-teamleader{background:var(--green);color:#fff}
 .role-employee{background:var(--grey);color:#fff}
 
-/* ââ LAYOUT âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 LAYOUT \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .app-body{display:flex;flex:1;overflow:hidden}
 main{flex:1;overflow-y:auto;padding:24px}
 .view{display:none}.view.active{display:block}
 
-/* ââ CARDS & STATS âââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 CARDS & STATS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .page-title{font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:20px;display:flex;align-items:center;gap:10px}
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:24px}
 .stat-card{background:var(--card);border-radius:var(--radius);padding:18px;border:1px solid var(--border);box-shadow:0 1px 4px rgba(0,0,0,.06)}
@@ -57,14 +57,14 @@ main{flex:1;overflow-y:auto;padding:24px}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
 @media(max-width:700px){.two-col{grid-template-columns:1fr}}
 
-/* ââ TASK ROWS âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 TASK ROWS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .task-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);cursor:pointer;transition:.15s}
 .task-row:last-child{border-bottom:none}
 .task-row:hover{background:var(--blue-light);margin:0 -18px;padding:10px 18px;border-radius:6px}
 .task-row .task-title{flex:1;font-size:.9rem;font-weight:600}
 .task-row .task-meta{font-size:.78rem;color:var(--text-light)}
 
-/* ââ BADGES ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ  */
+/* \u2500\u2500 BADGES \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500  */
 .badge{display:inline-block;padding:2px 9px;border-radius:10px;font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.4px;white-space:nowrap}
 .badge-ny{background:#e0eaff;color:#1e40af}
 .badge-igang{background:var(--amber-b);color:var(--amber)}
@@ -74,7 +74,7 @@ main{flex:1;overflow-y:auto;padding:24px}
 .badge-mellem{background:var(--amber-b);color:var(--amber)}
 .badge-lav{background:var(--green-b);color:var(--green)}
 
-/* ââ KANBAN ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 KANBAN \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .kanban-wrap{display:flex;gap:16px;overflow-x:auto;padding-bottom:16px;align-items:flex-start;min-height:calc(100vh - 140px)}
 .kanban-col{background:#e8edf5;border-radius:var(--radius);min-width:260px;flex:1;display:flex;flex-direction:column;max-height:calc(100vh - 140px)}
 .col-header{padding:12px 14px;display:flex;align-items:center;justify-content:space-between;border-radius:var(--radius) var(--radius) 0 0;font-weight:700;font-size:.9rem}
@@ -100,7 +100,7 @@ main{flex:1;overflow-y:auto;padding:24px}
 .drop-zone{border:2px dashed var(--blue);border-radius:8px;padding:20px;text-align:center;color:var(--blue);font-size:.82rem;display:none}
 .col-cards.dragover .drop-zone{display:block}
 
-/* ââ ANALYTICS âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 ANALYTICS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
 @media(max-width:700px){.chart-grid{grid-template-columns:1fr}}
 .chart-card{background:var(--card);border-radius:var(--radius);border:1px solid var(--border);padding:18px}
@@ -114,7 +114,7 @@ main{flex:1;overflow-y:auto;padding:24px}
 .perf-table tr:last-child td{border-bottom:none}
 .bar-inline{height:8px;background:var(--blue);border-radius:4px;display:inline-block;vertical-align:middle;margin-left:8px}
 
-/* ââ MODAL âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 MODAL \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:500;display:none;align-items:center;justify-content:center;padding:16px}
 .overlay.open{display:flex}
 .modal{background:#fff;border-radius:12px;width:100%;max-width:560px;max-height:90vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,.3)}
@@ -132,7 +132,7 @@ main{flex:1;overflow-y:auto;padding:24px}
 @media(max-width:500px){.form-row{grid-template-columns:1fr}}
 .modal-footer{padding:16px 22px;border-top:1px solid var(--border);display:flex;gap:10px;justify-content:flex-end;background:#fff;position:sticky;bottom:0}
 
-/* ââ BUTTONS âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 BUTTONS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .btn{border:none;border-radius:7px;padding:9px 18px;font-size:.88rem;font-weight:600;font-family:inherit;transition:.2s;display:inline-flex;align-items:center;gap:6px}
 .btn-primary{background:var(--blue);color:#fff}
 .btn-primary:hover{background:#1a5a8a}
@@ -144,7 +144,7 @@ main{flex:1;overflow-y:auto;padding:24px}
 .btn-fab{position:fixed;bottom:24px;right:24px;width:54px;height:54px;border-radius:50%;background:var(--blue);color:#fff;border:none;font-size:1.5rem;box-shadow:0 4px 16px rgba(46,117,182,.4);z-index:100;transition:.2s}
 .btn-fab:hover{background:#1a5a8a;transform:scale(1.08)}
 
-/* ââ COMMENTS âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 COMMENTS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .comments-section{margin-top:20px;border-top:1px solid var(--border);padding-top:16px}
 .comments-section h4{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text-light);margin-bottom:12px}
 .comment{display:flex;gap:10px;margin-bottom:12px}
@@ -154,12 +154,12 @@ main{flex:1;overflow-y:auto;padding:24px}
 .comment-input-row input{flex:1;border:1px solid var(--border);border-radius:7px;padding:8px 12px;font-size:.88rem;font-family:inherit}
 .comment-input-row input:focus{outline:none;border-color:var(--blue)}
 
-/* ââ EMPTY STATE âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 EMPTY STATE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .empty{text-align:center;padding:40px 20px;color:var(--text-light)}
 .empty-icon{font-size:2.5rem;margin-bottom:10px}
 .empty p{font-size:.9rem}
 
-/* ââ HAMBURGER (mobile) ââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 HAMBURGER (mobile) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .hamburger{display:none;background:none;border:none;color:#fff;font-size:1.4rem;padding:6px}
 @media(max-width:600px){
   .hamburger{display:block}
@@ -169,12 +169,12 @@ main{flex:1;overflow-y:auto;padding:24px}
   .logo-badge{display:none}
 }
 
-/* ââ SCROLLBAR âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 SCROLLBAR \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 ::-webkit-scrollbar{width:6px;height:6px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:#c1cbd8;border-radius:3px}
 
-/* ââ TOOLTIP ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* \u2500\u2500 TOOLTIP \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 */
 .access-note{background:#fff3cd;border:1px solid #ffc107;border-radius:6px;padding:8px 14px;font-size:.82rem;color:var(--amber);margin-bottom:16px;display:flex;align-items:center;gap:8px}
 </style>
 </head>
@@ -185,11 +185,11 @@ main{flex:1;overflow-y:auto;padding:24px}
     <span class="logo-badge">BRIEF</span>
     Opgavestyring
   </div>
-  <button class="hamburger" onclick="toggleNav()">â°</button>
+  <button class="hamburger" onclick="toggleNav()">\u2630</button>
   <nav id="main-nav">
-    <button onclick="switchView('dashboard')" class="active" id="nav-dashboard">ð Oversigt</button>
-    <button onclick="switchView('kanban')" id="nav-kanban">ð Kanban</button>
-    <button onclick="switchView('analytics')" id="nav-analytics">ð Analytics</button>
+    <button onclick="switchView('dashboard')" class="active" id="nav-dashboard">\u{1F4CB} Oversigt</button>
+    <button onclick="switchView('kanban')" id="nav-kanban">\u{1F4CC} Kanban</button>
+    <button onclick="switchView('analytics')" id="nav-analytics">\u{1F4CA} Analytics</button>
   </nav>
   <div class="header-right">
     <div class="user-pill">
@@ -204,7 +204,7 @@ main{flex:1;overflow-y:auto;padding:24px}
 
   <!-- DASHBOARD -->
   <div class="view active" id="view-dashboard">
-    <div class="page-title">ð Oversigt <span id="dash-subtitle" style="font-size:.9rem;font-weight:400;color:var(--text-light)"></span></div>
+    <div class="page-title">\u{1F4CB} Oversigt <span id="dash-subtitle" style="font-size:.9rem;font-weight:400;color:var(--text-light)"></span></div>
     <div class="stats-grid" id="stats-grid"></div>
     <div id="access-note-dash"></div>
     <div class="two-col">
@@ -226,7 +226,7 @@ main{flex:1;overflow-y:auto;padding:24px}
   <!-- KANBAN -->
   <div class="view" id="view-kanban">
     <div class="page-title" style="justify-content:space-between">
-      <span>ð Kanban Board</span>
+      <span>\u{1F4CC} Kanban Board</span>
       <button class="btn btn-primary btn-sm" onclick="openModal()">+ Ny opgave</button>
     </div>
     <div id="access-note-kanban"></div>
@@ -235,11 +235,11 @@ main{flex:1;overflow-y:auto;padding:24px}
 
   <!-- ANALYTICS -->
   <div class="view" id="view-analytics">
-    <div class="page-title">ð Analytics</div>
+    <div class="page-title">\u{1F4CA} Analytics</div>
     <div id="access-note-analytics"></div>
     <div class="stats-grid" id="analytics-stats"></div>
     <div class="chart-grid">
-      <div class="chart-card"><h3>Completion rate â seneste 4 uger</h3><canvas id="chart-completion"></canvas></div>
+      <div class="chart-card"><h3>Completion rate \u2014 seneste 4 uger</h3><canvas id="chart-completion"></canvas></div>
       <div class="chart-card"><h3>Opgaver pr. status</h3><canvas id="chart-status"></canvas></div>
       <div class="chart-card"><h3>Fordeling pr. prioritet</h3><canvas id="chart-priority"></canvas></div>
       <div class="chart-card"><h3>Opgaver pr. kategori</h3><canvas id="chart-category"></canvas></div>
@@ -261,13 +261,13 @@ main{flex:1;overflow-y:auto;padding:24px}
   <div class="modal" id="task-modal">
     <div class="modal-header">
       <h2 id="modal-title">Ny opgave</h2>
-      <button class="btn-close" onclick="closeModal()">Ã</button>
+      <button class="btn-close" onclick="closeModal()">×</button>
     </div>
     <div class="modal-body">
       <input type="hidden" id="task-id">
       <div class="form-group">
         <label>Titel *</label>
-        <input type="text" id="f-title" placeholder="Beskriv opgaven kort og prÃ¦cist">
+        <input type="text" id="f-title" placeholder="Beskriv opgaven kort og præcist">
       </div>
       <div class="form-group">
         <label>Beskrivelse</label>
@@ -284,7 +284,7 @@ main{flex:1;overflow-y:auto;padding:24px}
             <option value="Vagt">Vagt</option>
             <option value="Uddannelse">Uddannelse</option>
             <option value="Administration">Administration</option>
-            <option value="PlanlÃ¦gning">PlanlÃ¦gning</option>
+            <option value="Planlægning">Planlægning</option>
             <option value="Logistik">Logistik</option>
             <option value="Andet">Andet</option>
           </select>
@@ -294,7 +294,7 @@ main{flex:1;overflow-y:auto;padding:24px}
         <div class="form-group">
           <label>Prioritet</label>
           <select id="f-priority">
-            <option value="HÃ¸j">HÃ¸j</option>
+            <option value="Høj">Høj</option>
             <option value="Mellem" selected>Mellem</option>
             <option value="Lav">Lav</option>
           </select>
@@ -310,7 +310,7 @@ main{flex:1;overflow-y:auto;padding:24px}
           <option value="Ny">Ny</option>
           <option value="I gang">I gang</option>
           <option value="Afventer">Afventer</option>
-          <option value="LÃ¸st">LÃ¸st</option>
+          <option value="Løst">Løst</option>
         </select>
       </div>
       <div class="comments-section" id="comments-section" style="display:none">
@@ -331,7 +331,7 @@ main{flex:1;overflow-y:auto;padding:24px}
 </div>
 
 <script>
-// âââ DATA âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 DATA \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 const ROLES = { executive:'Executive', depthead:'Dept. Head', teamleader:'Team Leader', employee:'Employee' };
 
 const DEFAULT_USERS = [
@@ -340,7 +340,7 @@ const DEFAULT_USERS = [
   { id:'u3', name:'Jakob N.',      role:'depthead',    team:'Sektion 2', initials:'JN' },
   { id:'u4', name:'Lars P.',       role:'teamleader',  team:'Gruppe 1',  initials:'LP' },
   { id:'u5', name:'Rasmus T.',     role:'teamleader',  team:'Gruppe 2',  initials:'RT' },
-  { id:'u6', name:'SÃ¸ren A.',      role:'employee',    team:'Gruppe 1',  initials:'SA' },
+  { id:'u6', name:'Søren A.',      role:'employee',    team:'Gruppe 1',  initials:'SA' },
   { id:'u7', name:'Nikolaj B.',    role:'employee',    team:'Gruppe 1',  initials:'NB' },
   { id:'u8', name:'Frederik M.',   role:'employee',    team:'Gruppe 2',  initials:'FM' },
 ];
@@ -349,19 +349,21 @@ const today = new Date();
 const d = (offset) => { const x=new Date(today); x.setDate(x.getDate()+offset); return x.toISOString().split('T')[0]; };
 
 const DEFAULT_TASKS = [
-  { id:'t1', title:'Vagtplan uge 14 fÃ¦rdiggÃ¸res', desc:'Udkast til vagtplan for uge 14 skal godkendes og sendes ud senest fredag.', assignee:'u4', category:'Vagt', priority:'HÃ¸j', deadline:d(2), status:'I gang', createdBy:'u1', createdAt:d(-3), comments:[{author:'u1', text:'Husk at tage hensyn til fridagene i pÃ¥sken.',ts:d(-2)}] },
-  { id:'t2', title:'Indmeldelse til skydning inkl. stÃ¸ttehold', desc:'Koordiner med Sektion 2 og send samlet indmeldelse.', assignee:'u5', category:'Uddannelse', priority:'HÃ¸j', deadline:d(1), status:'Afventer', createdBy:'u2', createdAt:d(-5), comments:[] },
-  { id:'t3', title:'Materielrapport Q1 afleveres', desc:'Gennemgang og aflevering af kvartalsmÃ¥ssig materielrapport.', assignee:'u2', category:'Administration', priority:'Mellem', deadline:d(5), status:'Ny', createdBy:'u1', createdAt:d(-1), comments:[] },
-  { id:'t4', title:'Briefing om OP CUSTODIA Ã¦ndringer', desc:'OrientÃ©r alle holdledere om Ã¦ndringer i OP CULTODOA procedure.', assignee:'u3', category:'PlanlÃ¦gning', priority:'HÃ¸j', deadline:d(0), status:'I gang', createdBy:'u1', createdAt:d(-2), comments:[{author:'u3',lext:'MÃ¸de planlagt til kl. 14:00 i dag.',ts:d(0)}] },
-  { id:'t5', title:'Soldatudrustning kontrol Gruppe 1', desc:'Fuldt udrustningstjek for alle soldater i Gruppe 1.', assignee:'u4', category:'Logistik'; priority:'Mellem', deadline:d(7), status:'Ny', createdBy:'u2', createdAt:d(-1), comments:[] },
+  { id:'t1', title:'Vagtplan uge 14 færdiggøres', desc:'Udkast til vagtplan for uge 14 skal godkendes og sendes ud senest fredag.', assignee:'u4', category:'Vagt', priority:'Høj', deadline:d(2), status:'I gang', createdBy:'u1', createdAt:d(-3), comments:[{author:'u1',text:'Husk at tage hensyn til fridagene i påsken.',ts:d(-2)}] },
+  { id:'t2', title:'Indmeldelse til skydning inkl. støttehold', desc:'Koordiner med Sektion 2 og send samlet indmeldelse.', assignee:'u5', category:'Uddannelse', priority:'Høj', deadline:d(1), status:'Afventer', createdBy:'u2', createdAt:d(-5), comments:[] },
+  { id:'t3', title:'Materielrapport Q1 afleveres', desc:'Gennemgang og aflevering af kvartalsmæssig materielrapport.', assignee:'u2', category:'Administration', priority:'Mellem', deadline:d(5), status:'Ny', createdBy:'u1', createdAt:d(-1), comments:[] },
+  { id:'t4', title:'Briefing om OP CUSTODIA ændringer', desc:'Orientér alle holdledere om ændringer i OP CUSTODIA procedure.', assignee:'u3', category:'Planlægning', priority:'Høj', deadline:d(0), status:'I gang', createdBy:'u1', createdAt:d(-2), comments:[{author:'u3',text:'Møde planlagt til kl. 14:00 i dag.',ts:d(0)}] },
+  { id:'t5', title:'Soldatudrustning kontrol Gruppe 1', desc:'Fuldt udrustningstjek for alle soldater i Gruppe 1.', assignee:'u4', category:'Logistik', priority:'Mellem', deadline:d(7), status:'Ny', createdBy:'u2', createdAt:d(-1), comments:[] },
   { id:'t6', title:'Opdater beredskabsplan', desc:'Revidering af lokal beredskabsplan iht. ny instruks.', assignee:'u2', category:'Administration', priority:'Lav', deadline:d(14), status:'Ny', createdBy:'u1', createdAt:d(-7), comments:[] },
-  { id:'t7', title:'ûáÙ±ÍÍÁ±¹³¹¥¹©Õ¹¤°ÍèÉµ³½ÉÍ±Ñ¥°áÙ±ÍÍ­Ñ¥Ù¥ÑÑÈ¤©Õ¹¤½È½­¹±Í¸°ÍÍ¥¹èÔÌ°Ñ½ÉäèU¹¹±Í°ÁÉ¥½É¥Ñäè5±±´°±¥¹é ÈÄ¤°ÍÑÑÕÌè9ä°ÉÑ	äèÔÄ°ÉÑÐé ´Ð¤°½µµ¹ÑÌémtô°(ì¥èÐà°Ñ¥Ñ±èµ±¥¹½É­½½É¥¹É¥¹ÃÍ­°Íè-½½É¥¹ÈµÙÑ­½µÁ¹¥Ð¥Ð¹ÃÍ­ÉÉ¹µ¹Ð¸°ÍÍ¥¹èÔÄ°Ñ½ÉäèYÐ°ÁÉ¥½É¥Ñäè#á¨°±¥¹é Ì¤°ÍÑÑÕÌè$¹°ÉÑ	äèÔÄ°ÉÑÐé ´Ø¤°½µµ¹ÑÌémtô°(ì¥èÐä°Ñ¥Ñ±è%¹ÉÑ¹¥¹ÍägefravÃ¦r marts', desc:'MÃ¥nedlig indberetning af sygefravÃ¦r til S1.', assignee:'u5', category:'Administration', priority:'Lav', deadline:d(-1), status:'LÃ¸st', createdBy:'u2', createdAt:d(-10), comments:[{author:'u5',text:'Afsendt til S1.',ts:d(-1)}] },
-  { id:'t10', title:'Vedligehold af hÃ¥ndvÃ¥ben â uge 13', desc:'PlanmÃ¦ssig vedligehold og eftersyn af kompagniets hÃ¥ndvÃ¥ben.', assignee:'u6', category:'Logistik', priority:'Mellem', deadline:d(-3), status:'LÃ¸st', createdBy:'u4', createdAt:d(-8), comments:[] },
-  { id:'t11', title:'Soldatsamtaler kvartal 1', desc:'GennemfÃ¸r kvartalsvise soldatsamtaler for alle i Gruppe 1.', assignee:'u4', category:'Uddannelse', priority:'Lav', deadline:d(10), status:'I gang', createdBy:'u2', createdAt:d(-3), comments:[] },
+  { id:'t7', title:'Øvelsesplanlægning juni', desc:'Fremlæg forslag til øvelsesaktiviteter i juni for godkendelse.', assignee:'u3', category:'Uddannelse', priority:'Mellem', deadline:d(21), status:'Ny', createdBy:'u1', createdAt:d(-4), comments:[] },
+  { id:'t8', title:'Amalienborg koordinering påske', desc:'Koordiner med vagtkompagniet ift. påskearrangement.', assignee:'u1', category:'Vagt', priority:'Høj', deadline:d(3), status:'I gang', createdBy:'u1', createdAt:d(-6), comments:[] },
+  { id:'t9', title:'Indberetning sygefravær marts', desc:'Månedlig indberetning af sygefravær til S1.', assignee:'u5', category:'Administration', priority:'Lav', deadline:d(-1), status:'Løst', createdBy:'u2', createdAt:d(-10), comments:[{author:'u5',text:'Afsendt til S1.',ts:d(-1)}] },
+  { id:'t10', title:'Vedligehold af håndvåben \u2014 uge 13', desc:'Planmæssig vedligehold og eftersyn af kompagniets håndvåben.', assignee:'u6', category:'Logistik', priority:'Mellem', deadline:d(-3), status:'Løst', createdBy:'u4', createdAt:d(-8), comments:[] },
+  { id:'t11', title:'Soldatsamtaler kvartal 1', desc:'Gennemfør kvartalsvise soldatsamtaler for alle i Gruppe 1.', assignee:'u4', category:'Uddannelse', priority:'Lav', deadline:d(10), status:'I gang', createdBy:'u2', createdAt:d(-3), comments:[] },
   { id:'t12', title:'Kompagnidagsbefehl uge 14', desc:'Udkast til kompagnidagsbefehl sendes til godkendelse.', assignee:'u7', category:'Administration', priority:'Mellem', deadline:d(1), status:'I gang', createdBy:'u4', createdAt:d(-1), comments:[] },
 ];
 
-// âââ STATE âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 STATE \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 let users = JSON.parse(localStorage.getItem('brief_users') || 'null') || DEFAULT_USERS;
 let tasks = JSON.parse(localStorage.getItem('brief_tasks') || 'null') || DEFAULT_TASKS;
 let currentUserId = localStorage.getItem('brief_user') || 'u1';
@@ -402,10 +404,10 @@ function getAssignableUsers() {
   return [u];
 }
 
-function userName(id) { const u = users.find(x=>x.id===id); return u ? u.name : 'â'; }
+function userName(id) { const u = users.find(x=>x.id===id); return u ? u.name : '\u2014'; }
 function userInitials(id) { const u = users.find(x=>x.id===id); return u ? u.initials : '?'; }
 
-// âââ INIT ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 INIT \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function init() {
   // Populate user selector
   const sel = document.getElementById('user-select');
@@ -451,15 +453,15 @@ function renderAll() {
   else renderAnalytics();
 }
 
-// âââ STATUS HELPERS ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 STATUS HELPERS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function statusClass(s) {
-  return ({Ny:'ny','I gang':'igang',Afventer:'afventer',LÃ¸st:'lost'}[s]||'ny');
+  return ({Ny:'ny','I gang':'igang',Afventer:'afventer',Løst:'lost'}[s]||'ny');
 }
 function priorityClass(p) {
-  return ({HÃ¸j:'hoj',Mellem:'mellem',Lav:'lav'}[p]||'lav');
+  return ({Høj:'hoj',Mellem:'mellem',Lav:'lav'}[p]||'lav');
 }
 function isOverdue(deadline, status) {
-  if (!deadline || status==='LÃ¸st') return false;
+  if (!deadline || status==='Løst') return false;
   return new Date(deadline) < new Date(today.toISOString().split('T')[0]);
 }
 function fmtDate(d) {
@@ -467,24 +469,24 @@ function fmtDate(d) {
   const x = new Date(d+'T00:00:00');
   return x.toLocaleDateString('da-DK',{day:'numeric',month:'short'});
 }
-function accessNote(text) { return `<div class="access-note">ð ${text}</div>`; }
+function accessNote(text) { return `<div class="access-note">\u{1F512} ${text}</div>`; }
 
-// âââ DASHBOARD âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 DASHBOARD \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function renderDashboard() {
   const u = currentUser();
   const visible = getVisibleTasks();
-  document.getElementById('dash-subtitle').textContent = `â ${u.name}`;
+  document.getElementById('dash-subtitle').textContent = `\u2014 ${u.name}`;
 
   // Stats
-  const active = visible.filter(t=>t.status!=='LÃ¸st');
-  const done = visible.filter(t=>t.status==='LÃ¸st');
+  const active = visible.filter(t=>t.status!=='Løst');
+  const done = visible.filter(t=>t.status==='Løst');
   const overdue = active.filter(t=>isOverdue(t.deadline,t.status));
-  const high = active.filter(t=>t.priority==='HÃ¸j');
+  const high = active.filter(t=>t.priority==='Høj');
   document.getElementById('stats-grid').innerHTML = `
     <div class="stat-card"><div class="num">${active.length}</div><div class="label">Aktive opgaver</div></div>
     <div class="stat-card"><div class="num">${done.length}</div><div class="label">Afsluttet</div></div>
     <div class="stat-card"><div class="num" style="color:var(--red)">${overdue.length}</div><div class="label">Overskredet deadline</div></div>
-    <div class="stat-card"><div class="num" style="color:var(--red)">${high.length}</div><div class="label">HÃ¸j prioritet</div></div>
+    <div class="stat-card"><div class="num" style="color:var(--red)">${high.length}</div><div class="label">Høj prioritet</div></div>
   `;
 
   // Access note
@@ -492,9 +494,9 @@ function renderDashboard() {
   document.getElementById('access-note-dash').innerHTML = notes[u.role] ? accessNote(notes[u.role]) : '';
 
   // My tasks
-  const mine = tasks.filter(t=>t.assignee===u.id&&t.status!=='LÃ¸st');
+  const mine = tasks.filter(t=>t.assignee===u.id&&t.status!=='Løst');
   const myEl = document.getElementById('my-tasks-list');
-  myEl.innerHTML = mine.length ? mine.map(t=>taskRowHTML(t)).join('') : '<div class="empty"><div class="empty-icon">â</div><p>Ingen aktive opgaver til dig</p></div>';
+  myEl.innerHTML = mine.length ? mine.map(t=>taskRowHTML(t)).join('') : '<div class="empty"><div class="empty-icon">\u2705</div><p>Ingen aktive opgaver til dig</p></div>';
 
   // Team overview
   const teamEl = document.getElementById('team-overview');
@@ -504,11 +506,11 @@ function renderDashboard() {
     teamPanel.style.display='';
     const teamUsers = u.role==='executive' ? users : users.filter(x=>x.team===u.team);
     teamEl.innerHTML = teamUsers.map(tu=>{
-      const tu_tasks = tasks.filter(t=>t.assignee===tu.id&&t.status!=='LÃ¸st');
+      const tu_tasks = tasks.filter(t=>t.assignee===tu.id&&t.status!=='Løst');
       const tu_over = tu_tasks.filter(t=>isOverdue(t.deadline,t.status)).length;
       return `<div class="task-row" style="cursor:default">
         <div class="avatar">${tu.initials}</div>
-        <div class="task-title" style="font-weight:500">${tu.name}<br><span style="font-size:.75rem;color:var(--text-light)">${tu.team} Â· ${ROLES[tu.role]}</span></div>
+        <div class="task-title" style="font-weight:500">${tu.name}<br><span style="font-size:.75rem;color:var(--text-light)">${tu.team} · ${ROLES[tu.role]}</span></div>
         <span class="badge badge-${statusClass('I gang')}">${tu_tasks.length} aktive</span>
         ${tu_over?`<span class="badge badge-hoj">${tu_over} forsinket</span>`:''}
       </div>`;
@@ -516,22 +518,22 @@ function renderDashboard() {
   }
 
   // All tasks
-  document.getElementById('all-tasks-title').textContent = u.role==='employee'?'Mine lÃ¸ste opgaver':'Alle aktive opgaver';
-  const allActive = u.role==='employee' ? tasks.filter(t=>t.assignee===u.id&&t.status==='LÃ¸st').slice(0,8) : visible.filter(t=>t.status!=='LÃ¸st');
-  document.getElementById('all-tasks-list').innerHTML = allActive.length ? allActive.map(t=>taskRowHTML(t)).join('') : '<div class="empty"><div class="empty-icon">ð­</div><p>Ingen opgaver at vise</p></div>';
+  document.getElementById('all-tasks-title').textContent = u.role==='employee'?'Mine løste opgaver':'Alle aktive opgaver';
+  const allActive = u.role==='employee' ? tasks.filter(t=>t.assignee===u.id&&t.status==='Løst').slice(0,8) : visible.filter(t=>t.status!=='Løst');
+  document.getElementById('all-tasks-list').innerHTML = allActive.length ? allActive.map(t=>taskRowHTML(t)).join('') : '<div class="empty"><div class="empty-icon">\u{1F4ED}</div><p>Ingen opgaver at vise</p></div>';
 }
 
 function taskRowHTML(t) {
   const od = isOverdue(t.deadline,t.status);
   return `<div class="task-row" onclick="openModal('${t.id}')">
     <span class="badge badge-${priorityClass(t.priority)}">${t.priority}</span>
-    <div><div class="task-title">${t.title}</div><div class="task-meta">${t.category} Â· ${userName(t.assignee)}</div></div>
+    <div><div class="task-title">${t.title}</div><div class="task-meta">${t.category} · ${userName(t.assignee)}</div></div>
     <span class="badge badge-${statusClass(t.status)}">${t.status}</span>
     <span class="task-meta" style="${od?'color:var(--red);font-weight:700':''}">${fmtDate(t.deadline)}</span>
   </div>`;
 }
 
-// âââ KANBAN ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 KANBAN \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function renderKanban() {
   const u = currentUser();
   const visible = getVisibleTasks();
@@ -542,7 +544,7 @@ function renderKanban() {
     { key:'Ny', label:'Ny', cls:'col-ny' },
     { key:'I gang', label:'I gang', cls:'col-igang' },
     { key:'Afventer', label:'Afventer', cls:'col-afventer' },
-    { key:'LÃ¸st', label:'LÃ¸st', cls:'col-lost' },
+    { key:'Løst', label:'Løst', cls:'col-lost' },
   ];
   const board = document.getElementById('kanban-board');
   board.innerHTML = cols.map(col=>{
@@ -568,12 +570,12 @@ function kanbanCardHTML(t) {
     </div>
     <div class="card-footer">
       <div class="card-assignee"><div class="avatar">${userInitials(t.assignee)}</div>${userName(t.assignee)}</div>
-      <div class="card-deadline ${od?'overdue':''}">${od?'â  ':''}${fmtDate(t.deadline)}</div>
+      <div class="card-deadline ${od?'overdue':''}">${od?'\u26A0 ':''}${fmtDate(t.deadline)}</div>
     </div>
   </div>`;
 }
 
-// âââ DRAG & DROP âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 DRAG & DROP \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 let dragId = null;
 function dragStart(e, id) { dragId=id; e.currentTarget.classList.add('dragging'); e.dataTransfer.effectAllowed='move'; }
 function dragOver(e) { e.preventDefault(); e.currentTarget.querySelector('.col-cards')?.classList.add('dragover'); }
@@ -587,7 +589,7 @@ function drop(e, status) {
   dragId=null;
 }
 
-// âââ ANALYTICS âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 ANALYTICS \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function renderAnalytics() {
   const u = currentUser();
   const visible = getVisibleTasks();
@@ -595,7 +597,7 @@ function renderAnalytics() {
   document.getElementById('access-note-analytics').innerHTML = notes[u.role] ? accessNote(notes[u.role]) : '';
 
   const total = visible.length;
-  const done = visible.filter(t=>t.status==='LÃ¸st').length;
+  const done = visible.filter(t=>t.status==='Løst').length;
   const active = total - done;
   const overdue = visible.filter(t=>isOverdue(t.deadline,t.status)).length;
   const rate = total ? Math.round(done/total*100) : 0;
@@ -622,17 +624,17 @@ function renderAnalytics() {
   });
 
   // Status distribution
-  const statCounts = ['Ny','I gang','Afventer','LÃ¸st'].map(s=>visible.filter(t=>t.status===s).length);
+  const statCounts = ['Ny','I gang','Afventer','Løst'].map(s=>visible.filter(t=>t.status===s).length);
   charts.status = new Chart(document.getElementById('chart-status'), {
-    type:'doughnut', data:{ labels:['Ny','I gang','Afventer','LÃ¸st'],
+    type:'doughnut', data:{ labels:['Ny','I gang','Afventer','Løst'],
       datasets:[{ data:statCounts, backgroundColor:['#c7d9ff','#ffd9b0',  '#ffe4d0','#c6efce'], borderWidth:2 }]},
     options:{ responsive:true, maintainAspectRatio:true, plugins:{ legend:{ position:'bottom' } } }
   });
 
   // Priority
-  const priCounts = ['HÃ¸j','Mellem','Lav'].map(p=>visible.filter(t=>t.priority===p).length);
+  const priCounts = ['Høj','Mellem','Lav'].map(p=>visible.filter(t=>t.priority===p).length);
   charts.priority = new Chart(document.getElementById('chart-priority'), {
-    type:'bar', data:{ labels:['HÃ¸j','Mellem','Lav'],
+    type:'bar', data:{ labels:['Høj','Mellem','Lav'],
       datasets:[{ data:priCounts, backgroundColor:['#ffcccc','#ffeb9c','#c6efce'], borderRadius:6 }]},
     options:{ responsive:true, maintainAspectRatio:true, plugins:{ legend:{ display:false } }, scales:{ y:{ ticks:{ stepSize:1 } } } }
   });
@@ -649,8 +651,8 @@ function renderAnalytics() {
   const assignableUsers = getAssignableUsers();
   const rows = assignableUsers.map(tu=>{
     const tuTasks = visible.filter(t=>t.assignee===tu.id);
-    const tuDone = tuTasks.filter(t=>t.status==='LÃ¸st').length;
-    const tuActive = tuTasks.filter(t=>t.status!=='LÃ¸st').length;
+    const tuDone = tuTasks.filter(t=>t.status==='Løst').length;
+    const tuActive = tuTasks.filter(t=>t.status!=='Løst').length;
     const tuOver = tuTasks.filter(t=>isOverdue(t.deadline,t.status)).length;
     const tuRate = tuTasks.length ? Math.round(tuDone/tuTasks.length*100) : 0;
     return `<tr>
@@ -666,7 +668,7 @@ function renderAnalytics() {
     <tbody>${rows}</tbody></table>`;
 }
 
-// âââ MODAL ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 MODAL \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 function openModal(taskId=null) {
   editingTaskId = taskId;
   const isEdit = !!taskId;
@@ -742,7 +744,7 @@ function renderComments(t) {
   list.innerHTML = t.comments.length ? t.comments.map(c=>`
     <div class="comment">
       <div class="avatar" style="flex-shrink:0">${userInitials(c.author)}</div>
-      <div class="comment-bubble">${c.text}<div class="comment-meta">${userName(c.author)} Â· ${fmtDate(c.ts)}</div></div>
+      <div class="comment-bubble">${c.text}<div class="comment-meta">${userName(c.author)} · ${fmtDate(c.ts)}</div></div>
     </div>`).join('') : '<p style="font-size:.82rem;color:var(--text-light);margin-bottom:8px">Ingen kommentarer endnu.</p>';
 }
 
@@ -757,7 +759,7 @@ function addComment() {
   save(); inp.value=''; renderComments(t);
 }
 
-// âââ START ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
+// \u2500\u2500\u2500 START \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
 init();
 </script>
 </body>
